@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_match_h_match"
+    android:background="@color/color_background"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listview"
+        style="@style/w_match_h_wrap"
+        android:background="@android:color/white"/>
+
+</LinearLayout>

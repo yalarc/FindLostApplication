@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_match_h_match"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/w_match_h_wrap"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:hint="@string/et_phone_num"/>
+
+    <RelativeLayout
+        style="@style/w_match_h_wrap">
+
+        <TextView
+            android:id="@+id/tv_code"
+            style="@style/w_wrap_h_wrap"
+            android:text="发送验证码"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="@dimen/dimen_small_text_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <EditText
+            android:id="@+id/et_code"
+            style="@style/w_match_h_wrap"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@id/tv_code"
+            android:inputType="number"
+            android:hint="验证码"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/w_match_h_wrap"
+        android:textSize="16sp"
+        android:inputType="textPhonetic"
+        android:hint="@string/text_name"/>
+
+    <EditText
+        android:id="@+id/et_pass"
+        style="@style/w_match_h_wrap"
+        android:hint="@string/text_password"
+        android:textSize="16sp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        style="@style/w_match_h_wrap"
+        android:hint="@string/text_password_again"
+        android:textSize="16sp"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:id="@+id/et_age"
+        style="@style/w_match_h_wrap"
+        android:textSize="16sp"
+        android:inputType="number"
+        android:hint="@string/text_age"/>
+
+    <RadioGroup
+        android:id="@+id/rg_sex"
+        style="@style/w_match_h_wrap"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/rb_boy"
+            style="@style/w_wrap_h_wrap"
+            android:checked="true"
+            android:text="@string/text_boy"/>
+        <RadioButton
+            android:id="@+id/rb_girl"
+            style="@style/w_wrap_h_wrap"
+            android:layout_marginLeft="20dp"
+            android:text="@string/text_girl"/>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_desc"
+        style="@style/w_match_h_wrap"
+        android:textSize="16sp"
+        android:hint="@string/text_desc"
+        android:gravity="top|left"
+        android:lines="3"/>
+
+    <Button
+        android:id="@+id/btn_registered"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/text_registered"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

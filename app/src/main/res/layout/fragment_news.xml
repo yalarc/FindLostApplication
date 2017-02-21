@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 使用自定义的SwipeRefreshLayout,增加上拉加载更多操作 -->
+<net.smartbetter.wonderful.view.RefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/srl_news"
+    style="@style/w_match_h_match">
+
+    <ListView
+        android:id="@+id/lv_news"
+        style="@style/w_match_h_match"/>
+
+</net.smartbetter.wonderful.view.RefreshLayout>

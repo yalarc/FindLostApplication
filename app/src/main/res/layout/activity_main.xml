@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_match_h_match"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bottom_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_news"
+            style="@style/main_nav_bottom"
+            android:drawableTop="@drawable/selector_nav_news"
+            android:text="动态消息" />
+        <RadioButton
+            android:id="@+id/rb_find"
+            style="@style/main_nav_bottom"
+            android:drawableTop="@drawable/selector_nav_news"
+            android:text="寻物信息" />
+        <RadioButton
+            android:id="@+id/rb_lost"
+            style="@style/main_nav_bottom"
+            android:drawableTop="@drawable/selector_nav_news"
+            android:text="招领信息" />
+
+        <RadioButton
+            android:id="@+id/rb_user"
+            style="@style/main_nav_bottom"
+            android:drawableTop="@drawable/selector_nav_user"
+            android:text="我的" />
+
+    </RadioGroup>
+</LinearLayout>

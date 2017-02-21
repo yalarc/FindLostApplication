@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_match_h_match"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <LinearLayout
+        style="@style/w_match_h_match"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="手机号"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edittext_bg"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            style="@style/w_match_h_wrap"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/keep_password"
+                style="@style/w_wrap_h_wrap"
+                android:layout_gravity="right"
+                android:text="@string/text_keep_password"
+                android:textColor="@color/colorAccent"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:text="@string/text_login"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        style="@style/w_match_h_wrap"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/tv_forget"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentLeft="true"
+            android:text="@string/text_find_password"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/tv_registered"
+            style="@style/w_wrap_h_wrap"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:text="@string/text_registered"
+            android:textColor="@color/colorAccent"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

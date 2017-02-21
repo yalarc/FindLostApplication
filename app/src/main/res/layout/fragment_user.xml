@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/w_match_h_match">
+
+    <LinearLayout
+        style="@style/w_match_h_match"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@color/base_color"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:src="@drawable/default_avatar"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="2dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_user"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="编辑资料"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/button_bg"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!--姓名-->
+        <LinearLayout
+            android:id="@+id/ll_line1"
+            style="@style/w_match_h_wrap"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:text="姓名:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                style="@style/w_match_h_wrap"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!--性别-->
+        <LinearLayout
+            android:id="@+id/ll_line2"
+            style="@style/w_match_h_wrap"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:text="性别:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_sex"
+                style="@style/w_match_h_wrap"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!--年龄-->
+        <LinearLayout
+            android:id="@+id/ll_line3"
+            style="@style/w_match_h_wrap"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:text="年龄:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_age"
+                style="@style/w_match_h_wrap"
+                android:lines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!--简介-->
+        <LinearLayout
+            android:id="@+id/ll_line4"
+            style="@style/w_match_h_wrap"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/w_wrap_h_wrap"
+                android:gravity="top|left"
+                android:text="简介:"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/et_desc"
+                style="@style/w_match_h_wrap"
+                android:gravity="top|left"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_update_ok"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_bg"
+            android:text="确定修改"
+            android:textColor="@android:color/white"
+            android:visibility="gone"/>
+
+
+        <TextView
+            android:id="@+id/tv_default_no_login"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/text_default_no_login"/>
+
+    </LinearLayout>
+</ScrollView>

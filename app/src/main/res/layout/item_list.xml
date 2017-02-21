@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/w_match_h_wrap"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp">
+
+    <RelativeLayout
+        style="@style/w_match_h_wrap"
+        android:layout_height="40dp"
+        android:paddingBottom="3dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_avatar"
+            android:layout_alignParentLeft="true"/>
+
+        <LinearLayout
+            style="@style/w_match_h_match"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:paddingLeft="10dp">
+
+            <LinearLayout
+                style="@style/h_20dp_w_match"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <TextView
+                    android:id="@+id/tv_author"
+                    android:layout_height="18dp"
+                    android:layout_width="wrap_content"
+                    android:text="哈哈哈"
+                    android:layout_marginBottom="2dp"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:textColor="@color/clr_main_bg"/>
+
+                <ImageView
+                    android:id="@+id/img_sex"
+                    style="@style/w_wrap_h_wrap"
+                    android:src="@drawable/sex_boy"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="5dp"/>
+
+                <TextView
+                    android:id="@+id/tv_created_time"
+                    style="@style/w_wrap_h_wrap"
+                    android:text="2017-01-01 00:00:00"
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:paddingLeft="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/h_20dp_w_match"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/w_wrap_h_wrap"
+                    android:text="来自: "
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:layout_alignParentTop="true"/>
+
+                <ImageView
+                    android:id="@+id/img_location"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/location"/>
+
+                <TextView
+                    android:id="@+id/label_address"
+                    style="@style/w_wrap_h_wrap"
+                    android:text="中国"
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginLeft="2dp"/>
+                <TextView
+                    android:id="@+id/label_sign"
+                    style="@style/w_wrap_h_wrap"
+                    android:paddingLeft="20dp"
+                    android:text="这是我丢的"
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginLeft="2dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/h_20dp_w_match"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+                <TextView
+                    style="@style/w_wrap_h_wrap"
+                    android:text="电话: "
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:layout_alignParentTop="true"/>
+
+                <TextView
+                    android:id="@+id/text_tel"
+                    style="@style/w_wrap_h_wrap"
+                    android:text="15210695501"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_tiny_text_size"
+                    android:layout_alignParentTop="true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:maxLines="4"
+        android:text="物品的描述信息"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/iv_img"
+        style="@style/w_wrap_h_wrap"
+        android:layout_marginRight="8dp"
+        android:visibility="visible" />
+
+</LinearLayout>
